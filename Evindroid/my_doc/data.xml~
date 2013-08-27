@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ucenici>
+
+    <ucenik>
+        <ime>Darko</ime>
+        <prezime>Blagojevic</prezime>
+        <jmbg>11000101010</jmbg>
+        <broj_mk>12101</broj_mk> 
+    </ucenik>
+
+    <ucenik>
+        <ime>Dusan</ime>
+        <prezime>Velickovic</prezime>
+        <jmbg>59430823084</jmbg>
+        <broj_mk>12102</broj_mk>
+    </ucenik>
+
+</ucenici>

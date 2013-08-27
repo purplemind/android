@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Evindroid</string>
+    <string name="action_settings">Settings</string>
+    <string name="ListaUcenika">Lista Ucenika</string>
+    <string-array name="Stavke">
+        <item >Stavka1</item>
+        <item >Stavka2</item>
+    </string-array>
+        <string name="desc_foto_ucenik">foto ucenik</string>
+        <string name="ime">Ime</string>
+        <string name="prezime">Prezime</string>
+        <string name="jmbg">JMBG</string>
+        <string name="broj_mk">Broj u MK</string>
+        <string name="sacuvaj">Sačuvaj</string>
+        <string name="modify_ucenik_data">Izmena podataka</string>
+        <string name="delete_ucenik">Ukloni ucenika</string>
+        <string name="da_li_ste_sigurni">Da li ste sigurni?</string>
+        <string name="da">Da</string>
+        <string name="ne">Ne</string>
+        <string name="dodaj">Dodaj</string>
+        <string name="show_ucenik">Prikazi podatke</string>
+        <string name="show_ocene">Ocene</string>
+        <string name="show_izostanci">Izostanci</string>
+        <string name="listaPredmeta">Lista predmeta</string>
+
+</resources>
