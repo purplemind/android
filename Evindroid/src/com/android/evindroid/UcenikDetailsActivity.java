@@ -53,7 +53,7 @@ public class UcenikDetailsActivity extends Activity {
 	    } //else: nothing - leave all EditText views empty
 	    
 	    //TODO: check empty field!!!
-	    Button btn_sacuvaj = (Button) findViewById(R.id.sacuvaj_btn);
+	    Button btn_sacuvaj = (Button) findViewById(R.id.btn_sacuvaj_ucenik);
 	    btn_sacuvaj.setOnClickListener(new View.OnClickListener() {			
 			@Override
 			public void onClick(View v) {

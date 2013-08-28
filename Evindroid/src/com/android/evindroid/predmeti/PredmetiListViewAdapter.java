@@ -28,13 +28,13 @@ public class PredmetiListViewAdapter extends ArrayAdapter<Predmet>{
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
 		//return super.getView(position, convertView, parent);
-		View rowView = null;
-		if (values != null ) {
-			LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-			rowView = inflater.inflate(R.layout.predmet_row_layout, parent, false);
-			id_nazivTextView = (TextView) rowView.findViewById(R.id.id_naziv_PredmetTextView);
-			Predmet p = values.get(position);
-			id_nazivTextView.setText(p.getId() + ", " + p.getNaziv());
+		View rowView;
+		LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+		rowView = inflater.inflate(R.layout.predmet_row_layout, parent, false);
+		id_nazivTextView = (TextView) rowView.findViewById(R.id.id_naziv_PredmetTextView);
+		if (values!=null) {
+			Predmet p = values.get(position); 
+			id_nazivTextView.setText(p.getNaziv() + ", " + p.getId());
 			rowView.setTag(Integer.valueOf(position));
 		}
 		return rowView;

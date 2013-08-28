@@ -99,7 +99,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/sacuvaj_btn"
+        android:id="@+id/btn_sacuvaj_ucenik"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"

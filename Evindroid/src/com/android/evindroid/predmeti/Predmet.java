@@ -1,11 +1,14 @@
 package com.android.evindroid.predmeti;
 
 import java.io.FileOutputStream;
+import java.util.ArrayList;
 import java.util.List;
 
 import android.content.Context;
+import android.os.Parcel;
+import android.os.Parcelable;
 
-public class Predmet {
+public class Predmet implements Parcelable {
 
 	public final static String FILE = "predmeti.xml";
 	private String id;
@@ -18,6 +21,11 @@ public class Predmet {
 	public Predmet(String id, String naziv) {
 		this.id = id;
 		this.naziv = naziv;
+	}
+	
+	public Predmet(Parcel source) {
+		id = source.readString();
+		naziv = source.readString();
 	}
 	
 	public String getId() {
@@ -38,6 +46,9 @@ public class Predmet {
 
 	public boolean addToFile(Context c) {
 		List<Predmet> arrPredmeti = new PredmetXmlParser().parse(c, FILE);
+		if ( arrPredmeti == null ) {
+			arrPredmeti = new ArrayList<Predmet>();
+		}
 		arrPredmeti.add(this);
 		FileOutputStream os = null;
 		String eol = System.getProperty("line.separator");
@@ -121,5 +132,28 @@ public class Predmet {
 			return false;
 		}
 	}
+
+	@Override
+	public int describeContents() {
+		// TODO Auto-generated method stub
+		return this.hashCode();
+	}
+
+	@Override
+	public void writeToParcel(Parcel dest, int flags) {
+		// TODO Auto-generated method stub
+		dest.writeString(id);
+		dest.writeString(naziv);
+	}
+	
+	public static final Parcelable.Creator<Predmet> CREATOR = new Parcelable.Creator<Predmet>() {
+		public Predmet createFromParcel(Parcel in) {
+			return new Predmet(in);
+		}
+
+		public Predmet[] newArray(int size) {
+			return new Predmet[size];
+		}
+	};
 
 }

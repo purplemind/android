@@ -13,7 +13,7 @@ public class PredmetiListView extends ListView {
 	public PredmetiListView(Context context) {
 		super(context);
 		this.arrPredmeti = new PredmetXmlParser().parse(context, Predmet.FILE);
-		setAdapter(new PredmetiListViewAdapter(context, arrPredmeti));		
+		setAdapter(new PredmetiListViewAdapter(context, arrPredmeti));
 	}
 
 	public PredmetiListView(Context context, AttributeSet attrs) {
@@ -30,7 +30,8 @@ public class PredmetiListView extends ListView {
 	 * @return the arrUcenici
 	 */
 	public List<Predmet> getArrPredmeti() {
-		return arrPredmeti;
+		PredmetiListViewAdapter adapter = (PredmetiListViewAdapter) this.getAdapter();
+		return adapter.getValues();
 	}
 	
 	public void updateItem(Predmet p, int position) {
