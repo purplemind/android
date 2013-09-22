@@ -71,7 +71,7 @@
             android:layout_marginRight="10dp"
             android:layout_weight="3"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="number" />
 
     </LinearLayout>
 
@@ -94,7 +94,7 @@
             android:layout_marginRight="10dp"
             android:layout_weight="3"
             android:ems="10"
-            android:inputType="text" />
+            android:inputType="number" />
 
     </LinearLayout>
 

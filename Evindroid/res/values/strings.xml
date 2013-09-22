@@ -29,5 +29,14 @@
         <string name="sacuvaj_predmet">Sacuvaj</string>
         <string name="modify_predmet">Promeni podatke predmeta</string>
         <string name="delete_predmet">Ukloni predmet</string>
+        <string name="txt_neopravdani">Neopravdani</string>
+        <string name="txt_opravdani">Opravdani</string>
+        <string name="prikazi_prosek">Prikaži prosek</string>
+        <string name="ukupno_izostanaka">Ukupno izostanaka</string>
+        <string name="prikazi_izostanke">Prikaži izostanke</string>
+        <string name="str_default">Default</string>
+        <string name="izostanci_modify">Promeni podatke</string>
+        <string name="izostanci_delete">Obriši podatak</string>
+        <string name="primer_ocenjicanja">Primer unosa ocena: 2 5 4</string>
 
 </resources>

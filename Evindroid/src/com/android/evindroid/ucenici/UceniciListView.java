@@ -13,17 +13,17 @@ public class UceniciListView extends ListView {
 	public UceniciListView(Context context) {
 		super(context);
 		this.arrUcenici = new UcenikXmlParser().parse(context, Ucenik.FILE);
-		setAdapter(new ListViewUceniciAdapter(context, arrUcenici));		
+		if ( arrUcenici != null ) {
+			setAdapter(new ListViewUceniciAdapter(context, arrUcenici));
+		}
 	}
 
 	public UceniciListView(Context context, AttributeSet attrs) {
 		super(context, attrs);
-		// TODO Auto-generated constructor stub
 	}
 
 	public UceniciListView(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);
-		// TODO Auto-generated constructor stub
 	}
 
 	/**

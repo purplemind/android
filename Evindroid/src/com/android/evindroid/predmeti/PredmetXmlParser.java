@@ -115,11 +115,9 @@ public class PredmetXmlParser {
 			in = c.openFileInput(file);
 			return parse_process(in);
 		} catch (XmlPullParserException e) {
-			// TODO Auto-generated catch block
-			return null;
+			return new ArrayList<Predmet>();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			return null;
+			return new ArrayList<Predmet>();
 		}
 	}
 	

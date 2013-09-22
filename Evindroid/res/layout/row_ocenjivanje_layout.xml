@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <TextView
+        android:id="@+id/txt_naziv_predmeta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp" />
+
+    <EditText
+        android:id="@+id/edt_ocene_premdeta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:ems="10"
+        android:inputType="text|number"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp"
+        android:textSize="12sp" >
+
+        <requestFocus />
+    </EditText>
+
+</LinearLayout>

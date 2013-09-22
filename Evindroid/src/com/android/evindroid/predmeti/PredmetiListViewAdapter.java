@@ -18,8 +18,6 @@ public class PredmetiListViewAdapter extends ArrayAdapter<Predmet>{
 	private TextView id_nazivTextView;
 	
 	public PredmetiListViewAdapter(Context context, List<Predmet> values) {
-		//myadapter_row_layout je jedna stavka sacinjena od instace ImageView i
-		//jedne TextView.
 		super(context, R.layout.predmet_row_layout, values);
 		this.values = values;
 		this.context = context;

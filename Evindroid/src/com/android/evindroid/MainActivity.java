@@ -1,5 +1,8 @@
 package com.android.evindroid;
 
+import com.android.evindroid.predmeti.ListaPredmeta;
+import com.android.evindroid.ucenici.ListaUcenika;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;

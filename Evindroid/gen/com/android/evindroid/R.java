@@ -25,59 +25,87 @@ public final class R {
     }
     public static final class drawable {
         public static final int bg_gradient=0x7f020000;
-        public static final int foto_ucenik_primer2=0x7f020001;
-        public static final int ic_launcher=0x7f020002;
-        public static final int no_photo=0x7f020003;
+        public static final int bg_ucenik_info=0x7f020001;
+        public static final int foto_ucenik_primer2=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
+        public static final int no_photo=0x7f020004;
     }
     public static final class id {
-        public static final int LinearLayout1=0x7f09000b;
-        public static final int MyAdapterRow=0x7f090003;
-        public static final int action_settings=0x7f090021;
-        public static final int broj_mk_editText=0x7f090018;
-        public static final int broj_mk_textView=0x7f090017;
+        public static final int LinearLayout1=0x7f09001b;
+        public static final int MyAdapterRow=0x7f09000d;
+        public static final int action_settings=0x7f090036;
+        public static final int broj_mk_editText=0x7f09002c;
+        public static final int broj_mk_textView=0x7f09002b;
         public static final int btn_ListPredmeta=0x7f090002;
         public static final int btn_ListaUcenika=0x7f090001;
-        public static final int btn_dodaj_predmet=0x7f09000e;
-        public static final int btn_dodaj_ucenika=0x7f090010;
-        public static final int btn_sacuvaj_predmet=0x7f09000a;
-        public static final int btn_sacuvaj_ucenik=0x7f090019;
-        public static final int delete_predmet=0x7f09001b;
-        public static final int delete_ucenik=0x7f09001e;
-        public static final int edt_id=0x7f090009;
-        public static final int edt_naziv=0x7f090007;
+        public static final int btn_dodaj_predmet=0x7f090022;
+        public static final int btn_dodaj_ucenika=0x7f090024;
+        public static final int btn_izostanci_ukupno=0x7f09000a;
+        public static final int btn_prikaz_izostanaka=0x7f09000b;
+        public static final int btn_prikazi_prosek=0x7f090015;
+        public static final int btn_sacuvaj_izostanci=0x7f090009;
+        public static final int btn_sacuvaj_ocene=0x7f090014;
+        public static final int btn_sacuvaj_predmet=0x7f09001a;
+        public static final int btn_sacuvaj_ucenik=0x7f09002d;
+        public static final int datePicker1=0x7f090004;
+        public static final int delete_predmet=0x7f090031;
+        public static final int delete_ucenik=0x7f090033;
+        public static final int edtNeopravdani=0x7f090008;
+        public static final int edtOpravdani=0x7f090006;
+        public static final int edt_id=0x7f090019;
+        public static final int edt_naziv=0x7f090017;
+        public static final int edt_ocene_premdeta=0x7f090020;
         public static final int id_LayoutRoot=0x7f090000;
-        public static final int id_naziv_PredmetTextView=0x7f09000c;
-        public static final int ime_editText=0x7f090012;
-        public static final int ime_textView=0x7f090011;
-        public static final int img_MyAdapterRow=0x7f090004;
-        public static final int jmbg_editText=0x7f090016;
-        public static final int jmbg_textView=0x7f090015;
-        public static final int layout_list_predmeti=0x7f09000d;
-        public static final int layout_list_ucenici=0x7f09000f;
-        public static final int modify_predmet=0x7f09001a;
-        public static final int modify_ucenik=0x7f09001d;
-        public static final int prezime_editText=0x7f090014;
-        public static final int prezime_textView=0x7f090013;
-        public static final int show_izostanci=0x7f090020;
-        public static final int show_ocene=0x7f09001f;
-        public static final int show_ucenik=0x7f09001c;
-        public static final int txt_MyAdapterRow=0x7f090005;
-        public static final int txt_id=0x7f090008;
-        public static final int txt_naziv=0x7f090006;
+        public static final int id_naziv_PredmetTextView=0x7f09001c;
+        public static final int ime_editText=0x7f090026;
+        public static final int ime_textView=0x7f090025;
+        public static final int img_MyAdapterRow=0x7f09000e;
+        public static final int izostanci_delete=0x7f09002f;
+        public static final int izostanci_list_linearlayout=0x7f09000c;
+        public static final int izostanci_modify=0x7f09002e;
+        public static final int jmbg_editText=0x7f09002a;
+        public static final int jmbg_textView=0x7f090029;
+        public static final int layout_list_predmeti=0x7f090021;
+        public static final int layout_list_ucenici=0x7f090023;
+        public static final int layout_ocenjivanje=0x7f090010;
+        public static final int listView_ocenjivanje=0x7f090012;
+        public static final int modify_predmet=0x7f090030;
+        public static final int modify_ucenik=0x7f090032;
+        public static final int prezime_editText=0x7f090028;
+        public static final int prezime_textView=0x7f090027;
+        public static final int show_izostanci=0x7f090035;
+        public static final int show_ocene=0x7f090034;
+        public static final int txtOpravdani=0x7f090005;
+        public static final int txt_MyAdapterRow=0x7f09000f;
+        public static final int txt_datum_list=0x7f090007;
+        public static final int txt_example_ocenjivanje=0x7f090013;
+        public static final int txt_id=0x7f090018;
+        public static final int txt_izostanci_jmbg=0x7f090003;
+        public static final int txt_naziv=0x7f090016;
+        public static final int txt_naziv_predmeta=0x7f09001f;
+        public static final int txt_neopravdani_list=0x7f09001e;
+        public static final int txt_opravdani_list=0x7f09001d;
+        public static final int txt_ucenik_info_ocene=0x7f090011;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int myadapter_row_layout=0x7f030001;
-        public static final int predmet_details=0x7f030002;
-        public static final int predmet_row_layout=0x7f030003;
-        public static final int spisak_predmeta=0x7f030004;
-        public static final int spisak_ucenika=0x7f030005;
-        public static final int ucenik_details=0x7f030006;
+        public static final int izostanci_layout=0x7f030001;
+        public static final int list_izostanci_layout=0x7f030002;
+        public static final int myadapter_row_layout=0x7f030003;
+        public static final int ocenjivanje_layout=0x7f030004;
+        public static final int predmet_details=0x7f030005;
+        public static final int predmet_row_layout=0x7f030006;
+        public static final int row_izostanci_list_layout=0x7f030007;
+        public static final int row_ocenjivanje_layout=0x7f030008;
+        public static final int spisak_predmeta=0x7f030009;
+        public static final int spisak_ucenika=0x7f03000a;
+        public static final int ucenik_details=0x7f03000b;
     }
     public static final class menu {
-        public static final int list_predmeti=0x7f080000;
-        public static final int list_ucenici=0x7f080001;
-        public static final int main=0x7f080002;
+        public static final int list_izostanci=0x7f080000;
+        public static final int list_predmeti=0x7f080001;
+        public static final int list_ucenici=0x7f080002;
+        public static final int main=0x7f080003;
     }
     public static final class string {
         public static final int ListaUcenika=0x7f050002;
@@ -92,6 +120,8 @@ public final class R {
         public static final int dodaj=0x7f05000e;
         public static final int id_predmeta=0x7f050014;
         public static final int ime=0x7f050004;
+        public static final int izostanci_delete=0x7f05001f;
+        public static final int izostanci_modify=0x7f05001e;
         public static final int jmbg=0x7f050006;
         public static final int listaPredmeta=0x7f050012;
         public static final int modify_predmet=0x7f050016;
@@ -99,11 +129,18 @@ public final class R {
         public static final int naziv_predmeta=0x7f050013;
         public static final int ne=0x7f05000d;
         public static final int prezime=0x7f050005;
+        public static final int prikazi_izostanke=0x7f05001c;
+        public static final int prikazi_prosek=0x7f05001a;
+        public static final int primer_ocenjicanja=0x7f050020;
         public static final int sacuvaj=0x7f050008;
         public static final int sacuvaj_predmet=0x7f050015;
         public static final int show_izostanci=0x7f050011;
         public static final int show_ocene=0x7f050010;
         public static final int show_ucenik=0x7f05000f;
+        public static final int str_default=0x7f05001d;
+        public static final int txt_neopravdani=0x7f050018;
+        public static final int txt_opravdani=0x7f050019;
+        public static final int ukupno_izostanaka=0x7f05001b;
     }
     public static final class style {
         /** 

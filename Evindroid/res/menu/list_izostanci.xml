@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/izostanci_modify" android:title="@string/izostanci_modify"></item>
+    <item android:id="@+id/izostanci_delete" android:title="@string/izostanci_delete"></item>
+    
+
+</menu>

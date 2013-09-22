@@ -8,7 +8,8 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 public class Ucenik implements Parcelable {
-	public final static String FILE = "podaci.xml";
+	
+	public final static String FILE = "ucenici.xml";
 	private String ime;
 	private String prezime;
 	private String jmbg;
@@ -43,6 +44,14 @@ public class Ucenik implements Parcelable {
 		this.img_url = null;
 	}
 
+	public static Ucenik loadUcenik(Context c, String jmbg) {
+		List<Ucenik> arrUcenici = new UcenikXmlParser().parse(c, FILE);
+		for ( Ucenik u: arrUcenici ) {
+			if ( u.getJmbg().equals(jmbg) ) return u;
+		}
+		return null;
+	}
+	
 	public String getIme() {
 		return ime;
 	}
@@ -124,7 +133,7 @@ public class Ucenik implements Parcelable {
 		this.img_url = img_url;
 	}
 
-	public boolean addToFile(Context c) {
+	public boolean saveUcenik(Context c) {
 		List<Ucenik> arrUcenici = new UcenikXmlParser().parse(c, FILE);
 		arrUcenici.add(this);
 		FileOutputStream os = null;

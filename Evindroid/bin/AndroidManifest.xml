@@ -22,10 +22,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:screenOrientation="portrait" android:name="ListaUcenika"></activity>
-        <activity android:name="UcenikDetailsActivity"></activity>
-        <activity android:name="ListaPredmeta"></activity>
-        <activity android:name="PredmetDetailsActivity"></activity>
+        <activity android:screenOrientation="portrait" android:name=".ucenici.ListaUcenika"></activity>
+        <activity android:name=".ucenici.UcenikDetailsActivity"></activity>
+        <activity android:name=".predmeti.ListaPredmeta"></activity>
+        <activity android:name=".predmeti.PredmetDetailsActivity"></activity>
+        <activity android:name=".ocene.OcenjivanjeActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".izostanci.IzostanciActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".izostanci.IzostanciListActivity" android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

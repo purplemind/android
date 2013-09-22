@@ -151,11 +151,9 @@ public class UcenikXmlParser {
 			in = c.openFileInput(file);
 			return parse_process(in);
 		} catch (XmlPullParserException e) {
-			// TODO Auto-generated catch block
-			return null;
+			return new ArrayList<Ucenik>(); 
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			return null;
+			return new ArrayList<Ucenik>();
 		}
 	}
 	
